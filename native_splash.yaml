@@ -1,0 +1,14 @@
+flutter_native_splash:
+  android: true
+  ios: true
+
+  # Image background color
+  color: "121212"
+  image: "assets/uptodo_logo.png"
+    # Android specific
+  android_12:
+    color: "121212"
+    image: "assets/uptodo_logo.png"
+
+
+
