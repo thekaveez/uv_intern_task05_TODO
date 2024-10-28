@@ -51,7 +51,9 @@ class WelcomePage extends StatelessWidget {
                   isFullWidth: true,
                   title: 'LOGIN',
                   color: 0xff8875FF,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/login');
+                  },
               ),
               const SizedBox(height: 24),
               MyButton(
@@ -59,7 +61,9 @@ class WelcomePage extends StatelessWidget {
                 isOutlined: true,
                 title: 'CREATE ACCOUNT',
                 color: 0xff8875FF,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/register');
+                },
               ),
               const SizedBox(height: 24),
             ],

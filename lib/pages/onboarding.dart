@@ -65,7 +65,7 @@ class _OnboardingState extends State<Onboarding> {
                   color: 0xFF8875FF,
                   onTap: (){
                     if(_isLastPage){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const WelcomePage()));
+                      Navigator.pushNamed(context, '/auth');
                     }else{
                       _controller.nextPage(duration: const Duration(milliseconds: 300), curve: Curves.easeIn);
                     }
