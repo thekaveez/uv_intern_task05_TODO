@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "378751881291",
+    "project_id": "uv-intern-task05-todo",
+    "storage_bucket": "uv-intern-task05-todo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378751881291:android:b9d3d4d6e3bb19733efdce",
+        "android_client_info": {
+          "package_name": "com.example.uv_intern_task05_todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB_MOsQ_c0rRiUJOyRB_cGhb_CQTEx4h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

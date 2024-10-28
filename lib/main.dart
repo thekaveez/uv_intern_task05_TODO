@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:uv_intern_task05_todo/pages/home_page.dart';
+import 'package:uv_intern_task05_todo/pages/login_page.dart';
 import 'package:uv_intern_task05_todo/pages/onboarding.dart';
+import 'package:uv_intern_task05_todo/pages/register_page.dart';
+import 'package:uv_intern_task05_todo/pages/welcome_page.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'auth/auth_page.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -30,9 +40,17 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Onboarding(),
+      home: const Onboarding(),
+      // routes
+      routes: {
+        '/welcome': (context) => const WelcomePage(),
+        '/login': (context) =>  LoginPage(),
+        '/register': (context) => RegisterPage(),
+        '/auth': (context) => const AuthPage(),
+        '/home': (context) => const HomePage(),
+      },
     );
   }
 }
