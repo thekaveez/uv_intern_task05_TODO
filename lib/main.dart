@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:uv_intern_task05_todo/pages/edit_task_page.dart';
 import 'package:uv_intern_task05_todo/pages/home_page.dart';
 import 'package:uv_intern_task05_todo/pages/login_page.dart';
 import 'package:uv_intern_task05_todo/pages/onboarding.dart';
@@ -50,6 +51,7 @@ class _MyAppState extends State<MyApp> {
         '/register': (context) => RegisterPage(),
         '/auth': (context) => const AuthPage(),
         '/home': (context) => const HomePage(),
+        '/editTask' : (context) => const EditTaskPage(),
       },
     );
   }
